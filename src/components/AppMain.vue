@@ -8,7 +8,7 @@ export default {
 
 <template>
     <main>
-        parte centrale
+        ...parte centrale...
     </main>
 </template>
 

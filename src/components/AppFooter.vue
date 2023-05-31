@@ -76,11 +76,11 @@ export default {
         <!-- FOLLOW -->
         <div class="follow">
             <div class="container-follow">
-                <div class="col">
+                <div class="col-button">
                     <button>SIGN-IP NOW!</button>
                 </div>
 
-                <div class="col">
+                <div class="col-link">
                     <ul>
                         <li>
                             <h3>FOLLOW US</h3>
@@ -181,10 +181,9 @@ footer {
             display: flex;
         }
 
-        .col {
-            width: 50%;
+        .col-button {
+            width: 70%;
             display: flex;
-            align-items: center;
             align-items: center;
 
             button {
@@ -198,6 +197,12 @@ footer {
                     color: $primary-color;
                 }
             }
+        }
+
+        .col-link {
+            width: 30%;
+            display: flex;
+            align-items: center;
 
             h3 {
                 color: $primary-color;
