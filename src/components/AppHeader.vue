@@ -85,7 +85,7 @@ export default {
 
 header {
     min-height: 100px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid black;
 
     .container {

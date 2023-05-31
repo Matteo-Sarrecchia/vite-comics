@@ -16,9 +16,11 @@ export default {
 @use "../styles/partials/variables.scss" as *;
 
 main {
-    min-height: 200px;
+    min-height: 100px;
     border: 1px solid black;
     text-align: center;
+    background-color: black;
+    color: white;
     font-size: 50px;
 }
 </style>
