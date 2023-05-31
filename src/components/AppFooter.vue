@@ -8,13 +8,12 @@ export default {
 
 <template>
     <footer>
-        <!-- logo -->
-        <div class="container">
-            <div class="logo">
-                <!-- <img src="../../public/img/dc-logo-bg.png" alt=""> -->
-            </div>
 
-            <div class="menu">
+        <!-- container -->
+        <div class="container">
+
+            <!-- contatti -->
+            <div class="contatti">
                 <div class="col">
                     <ul>
                         <li>
@@ -42,7 +41,7 @@ export default {
                 <div class="col">
                     <ul>
                         <li>
-                            <h3>DC COMICS</h3>
+                            <h3>DC</h3>
                         </li>
                         <li>Characters</li>
                         <li>Comics</li>
@@ -56,7 +55,7 @@ export default {
                 <div class="col">
                     <ul>
                         <li>
-                            <h3>DC COMICS</h3>
+                            <h3>SITES</h3>
                         </li>
                         <li>Characters</li>
                         <li>Comics</li>
@@ -69,54 +68,89 @@ export default {
                 </div>
             </div>
 
-            <div class="follow">
+            <!-- logo -->
+            <div class="logo"></div>
+        </div>
 
+
+        <!-- FOLLOW -->
+        <div class="follow">
+            <div class="container-follow">
+                <div class="col">
+                    <button>SIGN-IP NOW!</button>
+                </div>
+
+                <div class="col">
+                    <ul>
+                        <li>
+                            <h3>FOLLOW US</h3>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../../public/img/footer-facebook.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../../public/img/footer-periscope.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../../public/img/footer-pinterest.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../../public/img/footer-twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../../public/img/footer-youtube.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </footer>
 </template>
+
+
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables.scss" as *;
 
 footer {
-    min-height: 500px;
+    min-height: 100px;
     background-image: url(../../public/img/footer-bg.jpg);
     background-size: cover;
     border: 1px solid black;
 
     .container {
         width: 80%;
-        height: 500px;
+        height: 300px;
         margin: 0 auto;
-        border: 1px solid white;
-        position: relative;
+        display: flex;
+        justify-content: space-between;
 
         .logo {
-            width: 45%;
+            width: 35%;
             height: 100%;
-            position: absolute;
-            text-align: end;
-            top: 0;
-            right: 0;
             background-image: url(../../public/img/dc-logo-bg.png);
             background-size: cover;
-            border: 1px solid white;
-
-            img {
-                width: 100%;
-            }
+            background-position: center;
         }
 
-        .menu {
+        .contatti {
+            padding: 20px 0;
             min-height: 100px;
             width: 50%;
-            border: 1px solid white;
             display: flex;
 
             .col {
-                width: calc(100% / 3);
+                width: 30%;
                 color: grey;
 
                 ul {
@@ -127,13 +161,59 @@ footer {
                         margin-bottom: 10px;
                         color: white;
                     }
+
                 }
             }
         }
 
-        .follow {
-            height: 100px;
-            background-color: black;
+    }
+
+    // FOLLOW SECTION
+    .follow {
+        height: 100px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+
+        .container-follow {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .col {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            align-items: center;
+
+            button {
+                padding: 10px;
+                background: none;
+                color: white;
+                border: 1px solid blue;
+
+                &:hover {
+                    background-color: rgb(186, 186, 234);
+                    color: $primary-color;
+                }
+            }
+
+            h3 {
+                color: $primary-color;
+            }
+
+            ul {
+                list-style-type: none;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    padding: 5px;
+                }
+            }
         }
     }
 }
