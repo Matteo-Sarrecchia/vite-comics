@@ -23,20 +23,17 @@ export default {
 
 .card {
     min-height: 100px;
-    width: 180px;
+    width: calc(100% / 6 - 20px);
     margin: 10px auto;
-    border: 1px solid rgb(255, 255, 255);
 
     .img-row {
-        width: 180px;
-        height: 180px;
+        max-width: 180px;
+        max-height: 180px;
 
-        img {
-            height: 180px;
+        img{
             width: 180px;
-            display: block;
+            max-height: 180px;
         }
-
     }
 
     .text {
