@@ -84,18 +84,21 @@ export default {
 @use "../styles/partials/variables.scss" as *;
 
 header {
-    min-height: 100px;
-    padding: 10px;
-    border: 1px solid black;
+    height: 80px;
+    margin: 10px;
 
     .container {
         width: 80%;
         margin: 0 auto;
         display: flex;
+        height: inherit;
 
         .logo {
-            width: 50%;
             width: 30%;
+
+            img {
+                height: 100%;
+            }
         }
 
         nav {
