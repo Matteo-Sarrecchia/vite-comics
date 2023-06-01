@@ -1,14 +1,21 @@
 <script >
+import AppCard from './AppCard.vue';
+import AppJumbotron from './AppJumbotron.vue';
 
 export default {
+    components: {
+        AppCard, AppJumbotron
+    },
     name: "AppMain",
+
 }
 
 </script>
 
 <template>
     <main>
-        ...parte centrale...
+        <AppJumbotron/>
+        <AppCard/>
     </main>
 </template>
 
